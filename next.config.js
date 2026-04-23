@@ -1,0 +1,16 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: { unoptimized: true },
+  webpack: (config, { dev, isServer }) => {
+    if (!dev) {
+      config.parallelism = 1;
+      config.cache = false;
+    }
+    return config;
+  },
+};
+
+module.exports = nextConfig;
