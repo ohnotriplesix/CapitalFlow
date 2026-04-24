@@ -84,6 +84,10 @@
     background: linear-gradient(135deg, hsl(160, 84%, 39%) 0%, hsl(160, 70%, 30%) 100%);
   }
   .text-gradient {
-    @apply text-emerald-600 dark:text-emerald-400 font-semibold;
+    color: hsl(160, 84%, 30%);
+  }
+
+  .dark .text-gradient {
+    color: hsl(160, 84%, 45%);
   }
 }
