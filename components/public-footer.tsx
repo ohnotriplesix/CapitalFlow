@@ -24,7 +24,7 @@ const footerLinks = {
 
 export function PublicFooter() {
   return (
-    <footer className="bg-foreground text-primary-foreground">
+    <footer className="gradient-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
           <div className="col-span-2 md:col-span-1">
@@ -34,7 +34,7 @@ export function PublicFooter() {
               </div>
               <span className="text-xl font-bold text-white">CapitalFlow</span>
             </Link>
-            <p className="text-sm text-white/60 leading-relaxed">
+            <p className="text-sm text-white/70 leading-relaxed">
               Fast, flexible funding solutions for growing businesses. Trusted by thousands of companies nationwide.
             </p>
           </div>
@@ -45,7 +45,7 @@ export function PublicFooter() {
               <ul className="space-y-2.5">
                 {links.map(link => (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-sm text-white/60 hover:text-white transition-colors">
+                    <Link href={link.href} className="text-sm text-white/70 hover:text-white transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -56,10 +56,10 @@ export function PublicFooter() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-white/40">&copy; {new Date().getFullYear()} CapitalFlow. All rights reserved.</p>
+          <p className="text-sm text-white/60">&copy; {new Date().getFullYear()} CapitalFlow. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <span className="text-xs text-white/40">NMLS #123456</span>
-            <span className="text-xs text-white/40">Equal Housing Lender</span>
+            <span className="text-xs text-white/60">NMLS #123456</span>
+            <span className="text-xs text-white/60">Equal Housing Lender</span>
           </div>
         </div>
       </div>
